@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <!-- fieldset se poora ka poora form ek field me aa jaayega ek jagah wrap ho jaayega basically bro -->
+        <fieldset>
+            <legend>form bhar madharchod</legend>
+        <label for="choosedate">enter date</label>
+        <input type="date" id="choosedate">
+        <br>
+        <br>
+        <label for="choosedish">selectdish</label>
+        <!-- yahan pe select me name boht important hota hai backend me jo data jaayega wo isi ke name se jaayega 
+        suppose user ne select kiya takatak to backend me jaayega dishes_hai=takatak -->
+        <select name="dishes_hai" id="choosedish">
+            <option value=""selected disabled>-- Select a dish --</option>
+            <option value="maggi">maggi</option>
+            <option value="kukrkure">kurkure</option>
+            <option value="takatak">takatak</option>
+        </select>
+        <br>
+        <br>
+        <textarea name="enter text" id="text" placeholder="text likho be" rows="10" cols="30"></textarea>
+    </fieldset>
+    </form>
+</body>
+</html>
