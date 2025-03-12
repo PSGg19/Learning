@@ -1,25 +1,29 @@
-console.log(7);
-var a=7;
-if(a===7)
+let array=[10,20,30,40];
+console.log(array);
+let new_array=[];
+array.forEach((num,index) => {
+    num=num*num;
+    new_array.push(num);
+    array[index]=num;
+});
+console.log(new_array);
+console.log(array);
+console.log("q2");
+let a1=[12, 45, 2, 67, 34];
+a2=[...a1].reverse();
+console.log(a2);
+let mx=Number.MIN_SAFE_INTEGER;
+for(let num of a1)
 {
-    console.log("han bhai ghum liya");
+    mx=Math.max(mx,num);
 }
-else
+console.log(mx);
+console.log("q3");
+let name="prahlad";
+let new_name='';
+for(ch of name)
 {
-    console.log("aisa kuch nhi hai");
+    console.log(ch);
+    new_name=ch+new_name;
 }
-let v1=5;
-{
-    let v=5;
-    {
-    console.log(v);
-    }
-    
-}
-
-{
-    console.log(a);
-}
-let a1=3;
-let b=5;
-console.log(a1**b);
+console.log(new_name);
